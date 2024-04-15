@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display properties</title>
+    <!-- Learning Outcomes
+        1.Display : inline , to convert it into inline element as div is a block element
+          using inline-block will help to resize accordingly
+        2.display : None , it is used when we want to not showcase.
+        3. visibility : hidden, it will simply hide the content but it will aquire space.
+        4. display: inline-flex;
+        justify-content: center;
+        5. display: grid; 
+    -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid aqua;
+            padding: 45px;
+            display: inline-block;
+            margin: 10px;
+            
+        }
+        .box1{
+            /* display: none; */
+            display: inline-flex;
+            justify-content: center;
+            /* display: grid; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        i am a box
+    </div>
+    <div class="box">
+        i am another box.
+    </div>
+    <span>
+        me good good
+    </span>
+    <span>
+        box.
+    </span>
+</body>
+</html>

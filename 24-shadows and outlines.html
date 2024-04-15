@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and OUTLINES</title>
+    <!-- Points
+        1. box-shadow: 5px(width) 5px(Height) 5px(blurred) color inset
+        2. text-shadow: 5px(width) 5px(Height) 5px(blurred) color inset
+        3. outline: 2px solid;
+        4. border-radius: 50px; to round the edges.
+        5. outline-offset: 13px;
+    
+    -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid brown;
+            padding: 30px;
+            margin: auto 15vw;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 5px 5px 10px brown;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+        }
+        .textshadow{
+            margin-top: 10px;
+            padding: 20px;
+            text-shadow: 5px 5px 5px red;
+        }
+        h1{
+            margin: auto 15vw;
+            margin-top: 25px;
+            border: 2px solid brown;
+            outline: 2px solid;
+            border-radius: 50px;
+            padding: 20px;
+            text-align: center;
+            outline-offset: 13px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        CSS SHADOWS AND OUTLINES
+    </div>
+    <h1>EXPLAINATION</h1>
+    <div class="textshadow">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt rerum corrupti minus incidunt fugit aut commodi numquam iste optio doloremque necessitatibus dolore officiis, ipsa quos ipsum deleniti perferendis itaque totam dignissimos cumque maxime fugiat! Similique nam suscipit aliquam consequuntur magni in rem! Impedit ad officiis, amet, nostrum sapiente quidem ut, veritatis facere assumenda maiores incidunt deleniti.
+    </div>
+</body>
+</html>
