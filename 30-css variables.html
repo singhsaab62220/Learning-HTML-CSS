@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Varianles</title>
+    <!-- it can hold background urls,strings, numbers also -->
+    <style>
+        :root{
+            --color:antiquewhite;
+            --seccolor:aquamarine;
+            --defpad:50px;
+            --defop:0.5;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* background-color: red; */
+            background-color: var(--color, blue);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style-type: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+            opacity: var(--defop);
+        }
+        ul li:first-child{
+            --thirdcolor: yellow;
+            background-color: var(--thirdcolor);
+        }
+        .container{
+            /* background-color: blue; */
+            background-color: var(--seccolor);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Login</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquam assumenda veniam illum vero sint quidem non dicta magnam ullam pariatur rerum, praesentium corrupti doloribus saepe, obcaecati, et consequatur unde maxime quasi eaque possimus neque culpa rem! Blanditiis debitis cumque excepturi. Voluptates vero iure rerum.
+        </p>
+    </div>
+</body>
+</html>
