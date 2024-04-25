@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --navcolor: rgb(4, 130, 248);
+            --bodycolor: rgb(87, 200, 245);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            height: 10vh;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: var(--navcolor, yellowgreen);
+        }
+
+        .navbar ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: right;
+        }
+        li{
+            padding-right: 30px;
+            margin: 20px;
+        }
+        body{
+            background-color: var(--bodycolor,rgb(196, 233, 141));
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Services</li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
