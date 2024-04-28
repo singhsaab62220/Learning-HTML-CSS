@@ -2,114 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=head, initial-scale=1.0">
     <title>Document</title>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: sticky;
+            top: 0%;
+        }
+        nav{
+            height: 83px;
+            background-color: brown;
+            /* position: sticky */
+        }
+        .container{
+            background-color: aquamarine;
+            height: 50vh;
+            margin: 10px 20px;
+            /* justify-items: center; */
+            /* align-items: center; */
+            /* display: flex; */ 
+            text-align: center;
+            /* margin: 20px; */
+            padding: 15px 35px;
+        }
+        main{
+            background-color: bisque;
+            padding: 50px;
+        }
+        .box1{
+            background-color: burlywood;
+            height: 100%;
+            width: 45%;   
+            display: inline-block;    
+            /* margin: 20px;     */
+        }
+        .box2{
+            background-color: burlywood;
+            height: 100%;
+            width: 45%;  
+            /* margin: 20px;   */
+            display: inline-block;         
+        }
+        .text-box{
+            border: 2px solid;
+            margin: 20px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 30px;
+            font-size: 1.25em;
+            box-sizing: border-box;
+            box-shadow: 12px 12px 10px burlywood ;
+        }
+        .orange-box{
+            position: fixed;
+            height: 43px;
+            background-color: aqua;
+            width: 43px;
+            right: 23px;
+            bottom: 23px;
+            border-radius: 50px;
+        }
+        footer{
+            background-color: brown;
+            height: 10vh;
+        }
 
-    nav{
-        /* margin: 10px; */
-        height: 10vh;
-        width: 100%;
-        border: 2px solid burlywood;
-        background-color: burlywood;
-        position: sticky;
-        top: 0%;
-    }
-    nav ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: right;
-        padding-right: 35px;
-        /* margin: 20px; */
-        position: sticky;
-
-    }
-    nav ul li{
-        padding: 20px;
-    }
-    .container{
-        height: 500px;
-        width: 100%;
-        background-color: blanchedalmond;
-        display: flex;
-    }
-    .box1, .box2{
-        height: 300px;
-        width: 500px;
-        background-color: burlywood;
-        margin: auto;
-    }
-    .message{
-        height: 100px;
-        width: 80vw;
-        margin: 20px auto;
-        /* justify-items: center; */
-        /* margin: auto; */
-        background-color: aquamarine;
-        border-radius: 20px;
-        text-align: center;
-        text-transform: capitalize;
-        /* padding-top: 50px; */
-        text-indent: middle;
-        padding: 23px;
-    }
-    p{
-        align-items: center;
-    }
-    .logo{
-        justify-content: right;
-    }
-    img{
-        height: 50px;
-        width: 50px;
-        position: fixed ;
-        /* justify-self: right; */
-
-    }
-    footer{
-        background-color: burlywood;
-        height: 20vh;
-        justify-content: center;
-    }
-    footer div{
-        padding: 50px;
-        text-align: center;
-    }
-
-</style>
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="box1"></div>
-        <div class="box2"></div>
-    </div>
-    <div class="logo">
-        <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1714003200&semt=sph" alt="">
-    </div>
+    <header>
+        <nav>
 
-    <div class="message">
-        <p>
-            
-            This is my project no. 4. Untill now i have learnt HTML and CSS.
-        </p>
-    </div>
-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cum architecto optio impedit enim reprehenderit iusto itaque, earum dignissimos consectetur, magni nihil maiores, officia quis provident saepe fugiat commodi! Mollitia, repellat, amet dignissimos sint laboriosam hic voluptates repellendus atque optio facere similique fugit architecto accusantium cumque ipsa nesciunt rem quam rerum nisi? Pariatur voluptas libero, odit eaque animi non molestiae rem architecto facere eligendi aut, ex velit.
-    <footer>
-        <div>
-            Copyright @2004
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
         </div>
+        <div class="text-box">
+            <p>Welcome to sigma web development course</p>
+        </div>
+        <div class="orangebox">
+
+        </div>
+    </main>
+    <footer>
+
     </footer>
 </body>
 </html>
