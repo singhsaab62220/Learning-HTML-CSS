@@ -51,3 +51,20 @@ nav{
     border: 0px;
     border-radius: 5px;
 }
+main .first span{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+main .version{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: aqua; */
+    margin-left: 20vw;
+    gap: 20px;
+}
+
