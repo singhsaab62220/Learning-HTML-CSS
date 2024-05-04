@@ -67,4 +67,37 @@ main .version{
     margin-left: 20vw;
     gap: 20px;
 }
+main .second{
+    display: grid;
+    grid-template-areas: "card1 card2 card3"
+                         "card4 card5 card6";
+    border: 2px solid black;
+    height: 50vh;
+    width: 70vw;
+    /* align-self: center; */
+    margin: 100px 200px;
+}
+main .second .cards{
+    background-color: aqua;
+    gap: 10px;
+}
+.card1{
+    grid-area: card1;
+    height: 10vh;
 
+}
+main .second .card2{
+    grid-area: card2;
+}
+main .second .card3{
+    grid-area: card3;
+}
+main .second .card4{
+    grid-area: card4;
+}
+main .second .card5{
+    grid-area: card5;
+}
+main .second .card6{
+    grid-area: card6;
+}
