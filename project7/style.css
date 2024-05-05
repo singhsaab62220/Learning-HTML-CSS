@@ -80,10 +80,12 @@ main .second{
 main .second .cards{
     background-color: aqua;
     gap: 10px;
+    display: grid;
 }
 .card1{
     grid-area: card1;
     height: 10vh;
+    background-color: antiquewhite;
 
 }
 main .second .card2{
