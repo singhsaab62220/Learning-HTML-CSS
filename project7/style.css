@@ -50,6 +50,7 @@ nav{
     color: white;
     border: 0px;
     border-radius: 5px;
+    cursor: pointer;
 }
 main .first span{
     display: flex;
@@ -64,42 +65,59 @@ main .version{
     justify-content: flex-start;
     align-items: flex-start;
     /* background-color: aqua; */
-    margin-left: 20vw;
+    margin-left: 10vw;
     gap: 20px;
 }
 main .second{
-    display: grid;
-    grid-template-areas: "card1 card2 card3"
-                         "card4 card5 card6";
-    border: 2px solid black;
-    height: 50vh;
-    width: 70vw;
-    /* align-self: center; */
-    margin: 100px 200px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    max-width: 70vw;
+    margin: 10px auto;
 }
-main .second .cards{
-    background-color: aqua;
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin: auto;
     gap: 10px;
-    display: grid;
-}
-.card1{
-    grid-area: card1;
-    height: 10vh;
-    background-color: antiquewhite;
+} 
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    padding: 30px 100px;
+    gap: 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
 
 }
-main .second .card2{
-    grid-area: card2;
-}
-main .second .card3{
-    grid-area: card3;
-}
-main .second .card4{
-    grid-area: card4;
-}
-main .second .card5{
-    grid-area: card5;
+.download{
+    padding: 10px 14px;
+    background-color: rgb(71, 189, 86);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
 }
 main .second .card6{
-    grid-area: card6;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:1200px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .cards{
+        grid-template-columns: 1fr ;
+        gap: 10px;
+    } 
+    
 }
