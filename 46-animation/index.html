@@ -7,14 +7,19 @@
     <style>
         .container{
             height: 80vh;
-            width: 50vw;
+            width: 80vw;
             background-color: aquamarine;
             margin: auto;
+            position: relative;
         }
         .box{
             height: 50px;
             width: 50px;
-            /* background-color: rebeccapurple; */
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            background-color: rebeccapurple;
             /* margin: auto; */
 
 
@@ -26,7 +31,8 @@
             animation-direction: normal;
             animation-fill-mode: backwards; */
 
-            animation: bounce1 1s cubic-bezier(0.48, 0.07, 0.73, 1.1) 1s infinite alternate;
+            animation: animateX 5s linear 1s infinite, animateY 1s ease-out 1s infinite alternate ;
+
 
             /* animation-name: bounce2;
             animation-duration: 3s;
@@ -37,31 +43,31 @@
 
             /* animation: name duration timing-function delay iteration-count direction fill-mode; */
         }
-        @keyframes bounce1 {
+        @keyframes animateX {
             from{
                 background-color: red;
-                border-radius: 100%;
-                transform: translateX(300px) translateY(100px);
+                /* border-radius: 100%; */
+                left: 0%;
             }
             to{
-                transform: translateY(200px) translateX(300px);
+                left: 100%;
                 background-color: yellowgreen;
-                border-radius: 100%;
+                /* border-radius: 100%; */
             }
         }
-        /* @keyframes bounce2 {
+        @keyframes animateY {
             from{
-                transform: translateY(200px) translateX(300px);
+                bottom: 0%;
                 background-color: yellowgreen;
                 border-radius: 100%;
             }
             to{
                 background-color: red;
                 border-radius: 100%;
-                transform: translateX(400px);
+                bottom: 90%;           
             } 
         }
-        */
+       
     </style>
 </head>
 <body>
